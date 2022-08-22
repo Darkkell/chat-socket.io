@@ -5,13 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/register.css">
-    <title>Login</title>
+    <link rel="stylesheet" href="css/chat.css">
+    <title>Chat Room</title>
 </head>
 <body>
     <header>
-        <h1>Chat with Socket.io</h1>
+        <h1>My chat with Socket.io</h1>
     </header>
+
+    <main>
+        <div id="all-messages"></div>
+        
+            <div class="send-message">
+                <input type="text" id="message">
+                <button type="button" id="send-message" class="btn secondary">Send</button>
+            </div>
+    </main>
 
     <script src="/socket.io/socket.io.js"></script>
     <script src="js/script.js"></script>
